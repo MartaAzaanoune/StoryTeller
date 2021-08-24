@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {app} from "../../base";
 
 
@@ -9,9 +9,7 @@ export default function AddFairyTale() {
     const [title, setTitle] = React.useState('')
     const [level, setLevel] = React.useState('')
     const [category, setCategory] = React.useState('')
-    const [edukacyjne, setEdukacyjne] = React.useState([])
-    const [zwierzeta, setZwierzeta] = React.useState([])
-    const [czarodziejskie, setCzarodziejskie] = React.useState([])
+
 
 
     const onChange = async (e) => {
@@ -32,38 +30,7 @@ export default function AddFairyTale() {
 
             })
     }
-    /*   useEffect(() => {
-           const fetchEdukacyjne = async () => {
-               const edukacyjneCollection = await db.collection('edukacyjne').get()
-               setEdukacyjne(edukacyjneCollection.docs.map(doc => {
-                   return doc.data()
-               }))
-           }
-           fetchEdukacyjne()
-       }, []);
-
-       useEffect(() => {
-           const fetchZwierzeta = async () => {
-               const zwierzetaCollection = await db.collection('zwierzeta').get()
-               setZwierzeta(zwierzetaCollection.docs.map(doc => {
-                   return doc.data()
-               }))
-           }
-           fetchZwierzeta();
-       }, []);
-
-       useEffect(() => {
-           const fetchCzarodziejskie = async () => {
-               const czarodziejskieCollection = await db.collection('edukacyjne').get()
-               setCzarodziejskie(czarodziejskieCollection.docs.map(doc => {
-                   return doc.data()
-               }))
-           }
-           fetchCzarodziejskie()
-       }, []);*/
-
-
-    return (
+        return (
         <section className="add_fairy">
 
             <div className="form_add_fairy">
