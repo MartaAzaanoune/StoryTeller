@@ -1,0 +1,27 @@
+
+ul.header {
+  display: inline-block;
+  @media (min-width: 650px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  li.header {
+    display: flex;
+
+    a {
+      font-size: 25px;
+      @media (min-width: 650px) {
+        list-style: none;
+        margin: 30px;
+      }
+
+    }
+  }
+}
+
+
+h3 {
+  font-size: 14px;
+}
+

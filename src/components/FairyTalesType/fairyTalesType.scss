@@ -1,0 +1,15 @@
+@import "./src/settings/colors";
+@import "./src/settings/fonts";
+div.decor {
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @media (min-width: 600px) {
+    display: flex;
+  }
+
+  font-family: $font-parisienne;
+  background: $main-background;
+  border-radius: 10%;
+}

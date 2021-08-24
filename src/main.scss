@@ -1,0 +1,52 @@
+
+@import "reset";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/mixins";
+
+@import "app";
+
+@import "components/Contact/contactform";
+@import "components/FairyTalesType/fairyTalesType";
+@import "components/AddFairyTale/addFairyTale";
+@import "components/FairyTales/fairyTales";
+@import "components/Home/Home";
+
+body{
+  background: linear-gradient(to right, lime, fuchsia 70%);
+  font-size: 24px;
+  font-family: "Indie-flower", cursive;
+  color: navajowhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    [class*='col-'] {
+      min-height: 1px;
+      width: 100%;
+      padding: 0 10px;
+    }
+    @media screen and (min-width: 600px) {
+      @include grid(12)
+    }
+  }
+}
+.box {
+  background: yellowgreen;
+  color: navajowhite;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+

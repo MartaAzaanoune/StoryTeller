@@ -1,0 +1,29 @@
+@import "./src/settings/colors";
+@import "./src/settings/fonts";
+div.categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 600px;
+  width: 100vw;
+  background-image: url("3583238new.jpg");
+  background-position: center;
+  background-size: cover;
+
+  ul {
+
+    li {
+      list-style: none;
+      margin: 5px;
+      font-family:$font-parisienne;
+      color: $navi-color;
+      font-size: 25px;
+
+      a {
+        color: $navi-color;
+        font-size: 25px;
+      }
+    }
+  }
+}
